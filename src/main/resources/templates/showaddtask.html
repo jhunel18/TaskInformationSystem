@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Task</title>
+    <link th:href="@{/bootstrap.css}" rel="stylesheet">
+    <link th:href="@{/jquery.js}" rel="stylesheet">
+    <link th:href="@{/script.js}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class = "col-md-4 col-md-offset-4">
+        <h2>Add Task Form</h2>
+            <div class="panel panel-default">
+                <div class = "panel-heading">
+                    <a th:href="@{/}" class = "btn btn-primary"> Return Home</a>
+                </div>
+        <div class = "panel-body">
+        <form action = "#" th:action = "@{saveTask}" th:object="${tasks}" METHOD="POST">
+            <fieldset>
+
+                <div class ="form-group">
+                    <label class = "control-label">Title</label>
+                    <div class = "controls">
+                        <input type = "text" th:field="*{title}" placeholder="" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class ="form-group">
+                    <label class = "control-label">Description</label>
+                    <div class = "controls">
+                        <textarea th:field="*{description}" placeholder="Enter Task Description" class = "form-control" required >
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class ="form-group">
+                    <label class = "control-label">Completed</label>
+                    <div class = "controls">
+                        <select th:field = "*{completed}" class = "form-control" required>
+                            <option value ="Completed" class = "form-control">Done</option>
+                            <option value = "Not Completed" class = "form-control">Not Completed</option>
+                        </select>
+                    </div>
+                </div>
+
+            <div>
+                <button type="submit" class="btn btn-info col-2 pull-right"> Save Task</button>
+            </div>
+            </fieldset>
+        </form>
+        </div>
+        </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
