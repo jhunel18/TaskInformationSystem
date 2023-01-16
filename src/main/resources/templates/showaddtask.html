@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Add Task</title>
-    <link th:href="@{/bootstrap.css}" rel="stylesheet">
-    <link th:href="@{/jquery.js}" rel="stylesheet">
-    <link th:href="@{/script.js}" rel="stylesheet">
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet">
+<!--    <link th:href="@{/jquery.js}" rel="stylesheet">-->
+<!--    <link th:href="@{/script.js}" rel="stylesheet">-->
 </head>
 <body>
 <div class="container">
@@ -14,7 +14,7 @@
         <h2>Add Task Form</h2>
             <div class="panel panel-default">
                 <div class = "panel-heading">
-                    <a th:href="@{/}" class = "btn btn-primary"> Return Home</a>
+                    <a th:href="@{/}" class = "btn btn-primary btn-sm"> Return Home</a>
                 </div>
         <div class = "panel-body">
         <form action = "#" th:action = "@{saveTask}" th:object="${tasks}" METHOD="POST">
