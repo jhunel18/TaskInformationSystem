@@ -25,8 +25,10 @@ public class TaskService {
     }
 
     public void saveTask(TaskEntity taskEntity){
+
         this.taskRepository.save(taskEntity);
     }
+
     public TaskEntity getTaskById(long id){
         Optional <TaskEntity> optional = taskRepository.findById(id);
         TaskEntity taskEntity = null;
