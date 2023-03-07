@@ -9,7 +9,7 @@ This is an exercise on the use of Spring Boot JPA and Postgres Database
 Using the command below copy the jar file from target folder to src\main\docker using the command:
 cp target/task-0.0.1-SNAPSHOT.jar src/main/docker
 
-#DockerFile Configuration
+# DockerFile Configuration
 Create a Docker File under scr\main\docker folder using the following script:
 
 FROM openjdk:17
@@ -17,7 +17,7 @@ LABEL maintainer = "jhunelpenaflorida"
 ADD task-0.0.1-SNAPSHOT.jar task-docker.jar
 ENTRYPOINT ["java","-jar","task-docker.jar"]
 
-#docker-compose.yml
+# docker-compose.yml
 
 Creat a docke-compose.yml configuration using the following command:
 
