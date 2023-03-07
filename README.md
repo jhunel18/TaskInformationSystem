@@ -51,5 +51,5 @@ services:
 docker-compose up
 
 #Access the End point
-Go to the url http://localhost:8080/
+Go to the url http://localhost:8080
 
