@@ -48,10 +48,10 @@ services:
       - 5432
 # Build and Run
 To build the application
-docker build -t tas-app
+`docker build -t tas-app`
 
 To run the application
-docker-compose up
+`docker-compose up`
 
 # Access the End point
 Go to the url http://localhost:8080
