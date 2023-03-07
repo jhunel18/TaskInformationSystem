@@ -12,6 +12,8 @@ Using the command below copy the jar file from target folder to src\main\docker 
 # DockerFile Configuration
 Create a Docker File under scr\main\docker folder using the following script:
 
+https://github.com/jhunel18/TaskInformationSystem/blob/master/src/main/docker/dockerfile
+
 FROM openjdk:17
 LABEL maintainer = "jhunelpenaflorida"
 ADD task-0.0.1-SNAPSHOT.jar task-docker.jar
