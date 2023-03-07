@@ -46,7 +46,7 @@ services:
       - POSTGRES_DB=task_db
     expose:
       - 5432
-# Run Build
+# Build and Run
 To build the application
 docker build -t tas-app
 
