@@ -49,7 +49,7 @@ services:
       
 # Build and Run
 To build the application
-`docker build -t tas-app`
+`docker build -t task-app`
 
 To run the application
 `docker-compose up`
