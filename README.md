@@ -21,7 +21,7 @@ ENTRYPOINT ["java","-jar","task-docker.jar"]
 
 Creat a docke-compose.yml configuration using the following command:
 
-`version: '2'
+version: '2'
 
 services:
   app:
@@ -45,7 +45,8 @@ services:
       - POSTGRES_PASSWORD=pass123
       - POSTGRES_DB=task_db
     expose:
-      - 5432`
+      - 5432
+      
 # Build and Run
 To build the application
 `docker build -t tas-app`
