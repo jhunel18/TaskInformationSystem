@@ -46,10 +46,13 @@ services:
       - POSTGRES_DB=task_db
     expose:
       - 5432
-# Run Build
+# Build and Run
+To build the application
+docker build -t tas-app
 
+To run the application
 docker-compose up
 
-#Access the End point
+# Access the End point
 Go to the url http://localhost:8080
 
