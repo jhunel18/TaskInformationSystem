@@ -7,7 +7,7 @@ This is an exercise on the use of Spring Boot JPA and Postgres Database
   
 # Docker Folder
 Using the command below copy the jar file from target folder to src\main\docker using the command:
-cp target/task-0.0.1-SNAPSHOT.jar src/main/docker
+`cp target/task-0.0.1-SNAPSHOT.jar src/main/docker`
 
 # DockerFile Configuration
 Create a Docker File under scr\main\docker folder using the following script:
