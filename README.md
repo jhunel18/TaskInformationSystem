@@ -1,6 +1,10 @@
 # TaskInformationSystem
 This is an exercise on the use of Spring Boot JPA and Postgres Database
 
+# Docker Folder
+The File is located in this folder
+https://github.com/jhunel18/TaskInformationSystem/tree/master/src/main/docker
+
 # Convert the Application to JAR File
   Run this command in the current directory
   `./mvnw clean package -DskipTests`
